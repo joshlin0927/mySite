@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Josh Lin</title>
+    <!-- personal icon -->
+    <link rel="icon" href="./pic/logo-s.png" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container-fluid px-xl-5">
+        <a class="navbar-brand" href="./">
+          <img class="logo" src="./pic/logo.png" alt="" />
+        </a>
+        <button
+          class="toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-pills ms-auto mb-2 mb-md-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link fw-900" href="./#">關於我</a>
+            </li>
+            <li class="nav-item fw-900">
+              <a class="nav-link" href="./#uiux">UI/UX 作品</a>
+            </li>
+            <li class="nav-item fw-900">
+              <a class="nav-link" href="./#email">聯絡我</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <section id="detailTitle" class="DetailPageAbout">
+        <div class="row">
+          <h1 class="detailTitle">Wander</h1>
+          <h2 class="DetailPageAboutContext fw-900" name="TC">
+            線上語言學習平台
+          </h2>
+        </div>
+      </section>
+      <section id="content">
+        <div class="row align-items-start" name="TC">
+          <img
+            src="./pic/wander/MacBook Pro & iPhone 12 Pro.png"
+            class="card-img-top p-2 p-md-4"
+            title="wander"
+          />
+          <div id="projectBrief" class="py-md-5">
+            <div class="col-12 col-md-10 offset-md-1">
+              <h3 class="fw-900 py-2">專案簡介</h3>
+              <div class="d-flex flex-wrap">
+                <div class="col-12 col-md-6">
+                  <p class="ParagraphContent">
+                    Wander
+                    是一個線上語言學習平台，也是一個以在市場上線為目標的模擬專案。
+                    <br />
+                    這個專案總共由我和其他四位成員一同完成，我們以頁面做為區分的基準，每個人要各自負責想要製作的頁面，從介面設計到程式撰寫都要自己完成，但是在製作介面設計時，我們每周至少會開會一次並討論出可能需要修改的設計問題，在設計確認之後才在執行階段時互相報告進度並提供資料。
+                  </p>
+                </div>
+                <ul class="col-12 col-md-5 offset-md-1 list-unstyled">
+                  <li class="d-flex py-2">
+                    <h5 class="fw-900 text-nowrap">負責項目: &nbsp;</h5>
+                    <span class="fw-500"
+                      >教師會員的 UX/UI 設計、Logo 設計、頁面切版、程式撰寫
+                    </span>
+                  </li>
+                  <li class="d-flex py-2">
+                    <h5 class="fw-900 text-nowrap">工具 & 技術:&nbsp;</h5>
+                    <span class="fw-500"
+                      >Figma、Adobe Illustrator、CSS + HTML5、Bootstrap5、
+                      Javascript、Restful API、axios、ReactJS、nodeJS
+                    </span>
+                  </li>
+                  <li class="d-flex py-2">
+                    <h5 class="fw-900 text-nowrap">專案時間: &nbsp;</h5>
+                    <span class="fw-500">2021.10 - 2021.11 </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="w-100 border-bot"></div>
+          </div>
+          <div class="my-3 my-md-5 p-2" id="analysis">
+            <div class="col-12 col-md-6 offset-md-3">
+              <h3 class="fw-900 py-2">競品分析</h3>
+              <p class="ParagraphContent">
+                雖然在以前就有嘗試過線上課程也看過許多的線上課程平台，但是我們沒有任何一個人對於線上教學有鑽研，所以我們分別去看了其他平台的服務、UI以及收費方式，然後做出了下面的分析表，這也讓我們有個粗略的概念，知道在製作線上語言學習平台所需要的功能和各個平台的優缺點，接著再以分析好的資料為基準下去製作。
+              </p>
+            </div>
+            <div class="DetailPageIMG">
+              <img
+                src="./pic/wander/wander分析_工作區域 1.png"
+                class="w-100"
+                title="分析"
+                alt="analysis"
+              />
+              <p class="text-center">各品牌優劣分析</p>
+            </div>
+            <div class="col-10 offset-1 d-flex flex-wrap">
+              <div class="col-12 col-md-6 px-2">
+                <h3 class="fw-900">優勢</h3>
+                <ul class="ParagraphContent py-xxl-2">
+                  <li>
+                    學生可以自由安排上課時間，不需要預約課程便能上課，每次上課時間長短自由選擇
+                  </li>
+                  <li>
+                    不需要與真人視訊接觸，有問題可以透過訊息的方式詢問與解答
+                  </li>
+                  <li>簡潔且容易操作的使用介面，讓使用者一目了然</li>
+                  <li>教師都有相關的資格並受過審核才能成為教師</li>
+                  <li>課程全部結束後會有結業證書作為相關證明</li>
+                  <li>對想學習的人有專門設計的小遊戲作為引導環節</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6 px-2">
+                <h3 class="fw-900">機會</h3>
+                <ul class="ParagraphContent py-xxl-2">
+                  <li>
+                    使用外語作為國際交流的工具，一直是不可漠視的部分，尤其台灣企業對於會外文的人，薪水會再高一些
+                  </li>
+                  <li>疫情造成實體課程無法開課</li>
+                  <li>因為疫情在家隔離所以空閒時間變多</li>
+                  <li>斜槓人生對於現代人來說已經是必須的</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6 px-2">
+                <h3 class="fw-900">劣勢</h3>
+                <ul class="ParagraphContent py-xxl-2">
+                  <li>品牌知名度不足</li>
+                  <li>需要先建制一定數量的課程才有可能吸引學生上門</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6 px-2">
+                <h3 class="fw-900">威脅</h3>
+                <ul class="ParagraphContent py-xxl-2">
+                  <li>競爭者非常多，許多大的平台以及品牌</li>
+                  <li>疫情結束或是趨緩之後，上課的人數也有可能逐漸下降</li>
+                  <li>對於已經在其他平台授課的人來說，平台轉移會是個問題</li>
+                  <li>因為要透過官方審核，教師的數量可能不高</li>
+                </ul>
+              </div>
+            </div>
+            <div class="w-100 border-bot"></div>
+          </div>
+
+          <div class="DetailPageIMGHld my-2 my-md-4 p-2" id="siteStructure">
+            <div class="col-12 col-md-6 offset-md-3">
+              <h3 class="fw-900 py-2">網站架構圖</h3>
+              <p class="ParagraphContent">
+                在做完競品的分析以及評估之後，我們將網站應該要有的頁面繪製成架構圖，並在之後以此作為頁面的流程設計依據，並由此延伸出各頁面所要有的功能流程。
+              </p>
+            </div>
+            <img
+              src="./pic/wander/MFEE19_E Team-sitemap.png"
+              class="DetailPageIMG"
+              title="網站架構圖"
+              alt="Site map"
+            />
+          </div>
+          <div class="DetailPageIMGHld col-12 py-4" id="flow">
+            <div class="col-12 col-md-6 offset-md-3">
+              <h3 class="fw-900 py-2">教師會員流程圖</h3>
+              <p class="ParagraphContent">
+                在繪製出教師會員所需要的全部流程之後，我對於頁面內需要有的東西有了很清楚的概念，在根據流程圖和架構圖的基礎上，我開始繪製教師會員頁面的
+                UI，而這張圖也在程式撰寫時起到很大作用，讓我不會遺漏應該要有的內容。
+              </p>
+            </div>
+            <img
+              src="./pic/wander/MFEE19_E Team-flow.png"
+              class="DetailPageIMG"
+              title="教師會員流程圖"
+              alt="Workout landing page"
+            />
+            <div class="w-100 border-bot"></div>
+          </div>
+
+          <div class="DetailPageIMGHld col-12 py-4" id="Hifi">
+            <div class="col-12 col-md-6 offset-md-3">
+              <h3 class="fw-900 py-2">高保真模型</h3>
+              <p class="ParagraphContent">
+                為了提高效率並減少大家在溝通上出現認知錯誤所造成的溝通成本，因為在開發前期就已經很清楚自己所要製作的功能樣貌，所有成員都將自己負責的頁面直接以高保真模型的方式繪製並呈現。
+              </p>
+            </div>
+            <img
+              src="./pic/wander/教師頁面-1.png"
+              class="DetailPageIMG"
+              title="教師頁面-1"
+              alt="Workout landing page"
+            />
+            <img
+              src="./pic/wander/教師頁面-2.png"
+              class="DetailPageIMG"
+              title="教師頁面-2"
+              alt="Workout landing page"
+            />
+            <img
+              src="./pic/wander/新增課程三步驟.png"
+              class="DetailPageIMG"
+              title="教師頁面-3-新增課程三步驟"
+              alt="Workout landing page"
+            />
+            <div class="w-100 border-bot"></div>
+          </div>
+          <div class="col-12 col-md-6 offset-md-3 py-4 top-10" id="conclusion">
+            <h4 class="fw-900 py-2">下一步</h4>
+            <p class="ParagraphContent py-2">
+              應該要做使用者測試並在收集所有的使用體驗的感想和意見反饋，接著根據所有收集到的資料和數據更新現有的介面。
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="d-flex justify-content-center">
+        <a href="./#uiux" class="BackHomeBtn">Back to Home Page</a>
+      </div>
+    </div>
+    <footer class="container">
+      <div class="row py-5">
+        <div class="d-flex justify-content-center align-items-center">
+          <h5 class="fw-900">Josh Lin - 林俊融</h5>
+          <div id="icons" class="ms-4">
+            <a href="#email">
+              <ion-icon class="me-2 size-150" name="mail-outline"></ion-icon>
+            </a>
+            <a href="https://vimeo.com/user28576906" target="_blank">
+              <ion-icon class="me-2 size-150" name="logo-vimeo"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/chun-junglin/" target="_blank">
+              <ion-icon class="me-2 size-150" name="logo-linkedin"> </ion-icon>
+            </a>
+            <a href="https://github.com/joshlin0927" target="_blank">
+              <ion-icon class="me-2 size-150" name="logo-github"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <h7 class="text-center">All Rights Reserved By @joshlin.</h7>
+      </div>
+    </footer>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ionicon -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <!-- JQ -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous"
+    ></script>
+    <!-- myScript -->
+    <script src="./myScript.js"></script>
+  </body>
+</html>
