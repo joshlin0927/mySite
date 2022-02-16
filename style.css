@@ -26,7 +26,7 @@ a:hover {
 }
 
 .logo {
-  width: 50%;
+  width: calc(40px + (40 - 16) * ((100vw - 320px) / (2560 - 320)));
 }
 
 .fw-500 {
