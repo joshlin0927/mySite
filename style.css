@@ -213,6 +213,15 @@ a:hover {
   justify-content: space-between;
 }
 
+.uiuxCard img {
+  transform: scale(100%);
+  transition: 0.25s;
+}
+
+.uiuxCard:hover img {
+  transform: scale(110%);
+}
+
 .card-img-top {
   padding: 0rem;
 }
