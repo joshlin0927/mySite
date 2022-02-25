@@ -112,7 +112,7 @@ a:hover {
 /* about */
 #about {
   position: relative;
-  margin-bottom: 0rem;
+  /* margin-bottom: 0rem; */
 }
 
 .aboutContent {
