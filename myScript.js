@@ -12,6 +12,7 @@ const vidModal = [
 vidModal.forEach((element) => {
   // console.log(element + " " + "iframe");
   $(element).on("hidden.bs.modal", (e) => {
+
     $(element + " " + "iframe").attr(
       "src",
       $(element + " " + "iframe").attr("src")
