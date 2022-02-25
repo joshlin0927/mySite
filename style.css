@@ -339,14 +339,19 @@ a:hover {
   background-color: #fff;
   background-clip: border-box;
   /* border: 1px solid rgba(0, 0, 0, 0.125); */
-  border-radius: 0.25rem;
+  /* border-radius: 0.25rem; */
 }
 
-.vidCard:hover .uiuxCard-body {
-  opacity: 1;
+.vidCard img{
+  transition: 0.25s;
+}
+
+.vidCard:hover img {
+  transform: scale(110%);
 }
 
 .vidCover {
+  width: 100%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
