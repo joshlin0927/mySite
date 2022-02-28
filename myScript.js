@@ -2,23 +2,24 @@
 const vidModal = [
   "#Donut",
   "#JGTrueStock",
-  "#ShenMing5sec",
   "#FarGlory",
   "#OPTCPromotion",
   "#OKminiPromotion",
   "#LearningTaiwanese",
 ];
 
-vidModal.forEach((element) => {
-  // console.log(element + " " + "iframe");
-  $(element).on("hidden.bs.modal", (e) => {
+let videos = document.querySelectorAll("iframe, video");
 
+vidModal.forEach((element) => {
+  // console.log($(element + " " + "iframe"));
+  $(element).on("hidden.bs.modal", (e) => {
     $(element + " " + "iframe").attr(
       "src",
       $(element + " " + "iframe").attr("src")
     );
   });
 });
+
 
 // language change
 localStorage.setItem("language", "TC");
