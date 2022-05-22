@@ -10,7 +10,6 @@
       name="google-site-verification"
       content="IQ_z3aHaOpIp37-8xcnfmybzM_Uy4mq3T5KOhoArBo4"
     />
-    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
     <!-- personal icon -->
     <link rel="icon" href="./pic/logo-s.png" />
     <!-- bootstrap -->
@@ -520,11 +519,6 @@
             placeholder="內容*"
             required
           ></textarea>
-          <input
-            type="hidden"
-            id="captchaResponse"
-            name="g-recaptcha-response"
-          />
           <button type="submit" class="emailBtn col-4 col-md-3 mx-auto mt-2">
             送出
           </button>
@@ -577,15 +571,6 @@
       integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
       crossorigin="anonymous"
     ></script>
-    <!-- robotcheck -->
-    <script>
-   grecaptcha.ready(function() {
-       grecaptcha.execute('6LeWUQsgAAAAAI2LVDGHMMH13bvO5lpeVzsJKx7i', {action: 'homepage'})
-       .then(function(token) {
-         document.getElementById('captchaResponse').value = token;
-       });
-     });
-</script>
     <!-- myScript -->
     <script src="./myScript.js"></script>
   </body>
