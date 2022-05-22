@@ -10,6 +10,7 @@
       name="google-site-verification"
       content="IQ_z3aHaOpIp37-8xcnfmybzM_Uy4mq3T5KOhoArBo4"
     />
+    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
     <!-- personal icon -->
     <link rel="icon" href="./pic/logo-s.png" />
     <!-- bootstrap -->
@@ -356,7 +357,6 @@
                       <div class="video-container col-12">
                         <iframe
                           src="https://player.vimeo.com/video/370273743?h=de4d7c90ce"
-                   
                           frameborder="0"
                           allow="autoplay; fullscreen"
                           allowfullscreen
@@ -520,13 +520,18 @@
             placeholder="內容*"
             required
           ></textarea>
-
+          <input
+            type="hidden"
+            id="captchaResponse"
+            name="g-recaptcha-response"
+          />
           <button type="submit" class="emailBtn col-4 col-md-3 mx-auto mt-2">
             送出
           </button>
         </form>
       </div>
     </section>
+
     <footer class="container">
       <div class="row py-5">
         <div class="d-flex justify-content-center align-items-center">
@@ -572,6 +577,7 @@
       integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
       crossorigin="anonymous"
     ></script>
+  
     <!-- myScript -->
     <script src="./myScript.js"></script>
   </body>
