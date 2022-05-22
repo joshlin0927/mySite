@@ -40,7 +40,7 @@ $('li[name="EN"]').click(() => {
 
 grecaptcha.ready(function () {
   grecaptcha
-    .execute("YOUR_SITE_KEY", { action: "homepage" })
+    .execute("6LeWUQsgAAAAAI2LVDGHMMH13bvO5lpeVzsJKx7i", { action: "homepage" })
     .then(function (token) {
       document.getElementById("captchaResponse").value = token;
     });
