@@ -577,7 +577,15 @@
       integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
       crossorigin="anonymous"
     ></script>
-  
+    <!-- robotcheck -->
+    <script>
+   grecaptcha.ready(function() {
+       grecaptcha.execute('6LeWUQsgAAAAAI2LVDGHMMH13bvO5lpeVzsJKx7i', {action: 'homepage'})
+       .then(function(token) {
+         document.getElementById('captchaResponse').value = token;
+       });
+     });
+</script>
     <!-- myScript -->
     <script src="./myScript.js"></script>
   </body>

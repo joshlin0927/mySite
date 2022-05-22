@@ -38,10 +38,3 @@ $('li[name="EN"]').click(() => {
   $('[name="EN"]').toggle();
 });
 
-grecaptcha.ready(function () {
-  grecaptcha
-    .execute("6LeWUQsgAAAAAI2LVDGHMMH13bvO5lpeVzsJKx7i", { action: "homepage" })
-    .then(function (token) {
-      document.getElementById("captchaResponse").value = token;
-    });
-});
