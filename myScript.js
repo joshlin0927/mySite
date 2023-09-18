@@ -1,22 +1,23 @@
-// YT pause
-const vidModal = [
-  "#Donut",
-  "#JGTrueStock",
-  "#FarGlory",
-  "#OPTCPromotion",
-  "#OKminiPromotion",
-  "#LearningTaiwanese",
-];
+// language change
+// localStorage.setItem("language", "TC");
+// let currentLocate = localStorage.getItem("language");
+// if (currentLocate == "TC") {
+//   $('[name="EN"]').toggle();
+// } else {
+//   $('[name="TC"]').toggle();
+// }
 
-let videos = document.querySelectorAll("iframe, video");
+// $('li[name="TC"]').click(() => {
+//   localStorage.setItem("language", "EN");
+//   $('[name="TC"]').toggle();
+//   $('[name="EN"]').toggle();
+// });
 
-vidModal.forEach((element) => {
-  // console.log($(this).find("iframe"));
-  $(element).on("hide.bs.modal", function (e) {
-    $(this).find("iframe").attr("src", $(this).find("iframe").attr("src"));
-  });
-});
-
+// $('li[name="EN"]').click(() => {
+//   localStorage.setItem("language", "TC");
+//   $('[name="TC"]').toggle();
+//   $('[name="EN"]').toggle();
+// });
 
 // index animation
 $(document).ready(function () {
@@ -73,23 +74,30 @@ $(".menuHolder").on("mouseleave", function () {
   $(".menu").css("grid-template-columns", "33.33% 33.33% 33.33%");
 });
 
-// language change
-// localStorage.setItem("language", "TC");
-// let currentLocate = localStorage.getItem("language");
-// if (currentLocate == "TC") {
-//   $('[name="EN"]').toggle();
-// } else {
-//   $('[name="TC"]').toggle();
-// }
+console.log(this);
 
-// $('li[name="TC"]').click(() => {
-//   localStorage.setItem("language", "EN");
-//   $('[name="TC"]').toggle();
-//   $('[name="EN"]').toggle();
-// });
+// carousel
+$(document).ready(function () {
+  $(Window).on("scroll", function(){
+    console.log("1");
+  });
+});
 
-// $('li[name="EN"]').click(() => {
-//   localStorage.setItem("language", "TC");
-//   $('[name="TC"]').toggle();
-//   $('[name="EN"]').toggle();
-// });
+// YT pause
+const vidModal = [
+  "#Donut",
+  "#JGTrueStock",
+  "#FarGlory",
+  "#OPTCPromotion",
+  "#OKminiPromotion",
+  "#LearningTaiwanese",
+];
+
+let videos = document.querySelectorAll("iframe, video");
+
+vidModal.forEach((element) => {
+  // console.log($(this).find("iframe"));
+  $(element).on("hide.bs.modal", function (e) {
+    $(this).find("iframe").attr("src", $(this).find("iframe").attr("src"));
+  });
+});

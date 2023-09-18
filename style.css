@@ -193,7 +193,7 @@ div.line,
 /* uiux */
 #uiux {
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .prototypeBtn {
@@ -271,7 +271,6 @@ div.line,
   top: 50%;
   left: 5%;
   transform: translate(-5%, -50%);
-  width: 100%;
   display: flex;
   align-items: flex-start;
 }
