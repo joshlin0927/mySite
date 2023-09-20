@@ -74,13 +74,37 @@ $(".menuHolder").on("mouseleave", function () {
   $(".menu").css("grid-template-columns", "33.33% 33.33% 33.33%");
 });
 
-console.log(this);
-
 // carousel
-$(document).ready(function () {
-  $(Window).on("scroll", function(){
-    console.log("1");
-  });
+
+let page = 0;
+
+function MySetInterval() {
+  if (page > 2) {
+    page = 0;
+  }
+  $("#slides").css("transform", `translateY(${page * -100}vh)`);
+
+  $(".slider-dots li")
+    .eq(page)
+    .css("background-color", "#404040")
+    .siblings()
+    .css("background-color", "transparent");
+}
+
+$(window).on("scroll", function () {
+  MySetInterval();
+});
+
+$(".slider-dots li").mousedown(function () {
+  let y = $(this).index();
+  page = y;
+
+  // console.log(page);
+  $("#slides").css("transform", `translateY(${y * -100}vh)`);
+  $(this)
+    .css("background-color", "#404040")
+    .siblings()
+    .css("background-color", "transparent");
 });
 
 // YT pause

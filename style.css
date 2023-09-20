@@ -74,7 +74,7 @@ div.line,
 .aboutText {
   margin: auto;
   width: 70%;
-  padding-top: 1vw
+  padding-top: 1vw;
 }
 
 .aboutText span {
@@ -192,25 +192,37 @@ div.line,
 
 /* uiux */
 #uiux {
+  position: relative;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-.prototypeBtn {
-  display: inline-block;
-  color: #fff;
-  background-color: #212529;
-  border: 1px solid #212529;
-  font-weight: 700;
-  text-align: center;
-  padding: 0.75rem 1.25rem;
-  cursor: pointer;
-  margin-top: 0.5rem;
-  transition: 0.25s;
+#slides {
+  transition: 1s cubic-bezier(0.59, 0.1, 0.52, 0.96);
 }
-.prototypeBtn:hover {
-  color: black;
-  background-color: white;
+
+.slider-dots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  position: fixed;
+  width: 10px;
+  height: 80px;
+  right: 1.5vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+.slider-dots li {
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid #666666;
+  margin: 0 4px;
+  border-radius: 50%;
 }
 
 .BackHomeBtn {
@@ -276,7 +288,7 @@ div.line,
 }
 
 .uiuxCard-title {
-  font-size: 14vw;
+  font-size: 13vw;
   font-weight: 900;
   color: black;
 }
@@ -291,8 +303,8 @@ div.line,
 .linkBtn {
   border: 0.5vw solid #000;
   border-radius: 50%;
-  width: 25vw;
-  height: 25vw;
+  width: 20vw;
+  height: 20vw;
   margin-top: 8vw;
   margin-left: -4vw;
   display: flex;
