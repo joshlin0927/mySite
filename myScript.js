@@ -78,23 +78,6 @@ $(".menuHolder").on("mouseleave", function () {
 
 let page = 0;
 
-function MySetInterval() {
-  if (page > 2) {
-    page = 0;
-  }
-  $("#slides").css("transform", `translateY(${page * -100}vh)`);
-
-  $(".slider-dots li")
-    .eq(page)
-    .css("background-color", "#404040")
-    .siblings()
-    .css("background-color", "transparent");
-}
-
-$(window).on("scroll", function () {
-  MySetInterval();
-});
-
 $(".slider-dots li").mousedown(function () {
   let y = $(this).index();
   page = y;

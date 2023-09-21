@@ -194,7 +194,7 @@ div.line,
 #uiux {
   position: relative;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 #slides {
@@ -210,8 +210,8 @@ div.line,
   padding: 0;
   position: fixed;
   width: 10px;
-  height: 80px;
-  right: 1.5vw;
+  height: 8vh;
+  right: 4vw;
   top: 50%;
   transform: translateY(-50%);
   z-index: 999;
@@ -333,6 +333,14 @@ div.line,
     font-size: 3vw;
     margin-top: 9vw;
   }
+  .slider-dots {
+    height: 10vh;
+  }
+  .slider-dots li {
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -345,6 +353,10 @@ div.line,
   }
   .linkBtn {
     margin-top: 8vw;
+  }
+  .slider-dots {
+    height: 10vh;
+    right: 2vw;
   }
 }
 
