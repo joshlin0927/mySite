@@ -197,6 +197,20 @@ div.line,
   overflow: hidden;
 }
 
+#uiux .prev,
+#uiux .next {
+  height: 10vh;
+  background-color: transparent;
+  opacity: 1;
+  z-index: 9999;
+  transition: 1s;
+}
+
+#uiux .prev:hover,
+#uiux .next:hover {
+  cursor: pointer;
+}
+
 #slides {
   transition: 1s cubic-bezier(0.59, 0.1, 0.52, 0.96);
 }
@@ -214,7 +228,7 @@ div.line,
   right: 4vw;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 999;
+  z-index: 998;
 }
 
 .slider-dots li {
@@ -332,6 +346,15 @@ div.line,
     height: 14vw;
     font-size: 3vw;
     margin-top: 9vw;
+  }
+  #uiux .prev,
+  #uiux .next {
+    opacity: 0;
+  }
+
+  #uiux .prev:hover,
+  #uiux .next:hover {
+    opacity: 1;
   }
   .slider-dots {
     height: 10vh;
