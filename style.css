@@ -3,6 +3,14 @@ ion-icon {
   text-decoration: none;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .splash-section {
   position: fixed;
   display: flex;
@@ -194,7 +202,6 @@ div.line,
 #uiux {
   position: relative;
   height: 100vh;
-  overflow: hidden;
 }
 
 #uiux .prev,
@@ -213,30 +220,6 @@ div.line,
 
 #slides {
   transition: 1s cubic-bezier(0.59, 0.1, 0.52, 0.96);
-}
-
-.slider-dots {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  list-style: none;
-  padding: 0;
-  position: fixed;
-  width: 10px;
-  height: 8vh;
-  right: 4vw;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 998;
-}
-
-.slider-dots li {
-  width: 15px;
-  height: 15px;
-  border: 1.5px solid #666666;
-  margin: 0 4px;
-  border-radius: 50%;
 }
 
 .BackHomeBtn {
@@ -258,7 +241,7 @@ div.line,
 .slideImg {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 33.33%;
 }
 
 .slideImg::before {
@@ -268,7 +251,12 @@ div.line,
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.85);
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.slideImg:hover::before {
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .slideImg1 {
@@ -276,6 +264,7 @@ div.line,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 4;
 }
 
 .slideImg2 {
@@ -283,6 +272,7 @@ div.line,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 3;
 }
 
 .slideImg3 {
@@ -290,15 +280,14 @@ div.line,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 2;
 }
 
 .uiuxCard-body {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translate(-5%, -50%);
+  margin: auto;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 .uiuxCard-title {
@@ -312,21 +301,6 @@ div.line,
   font-size: 4vw;
   font-weight: 700;
   color: black;
-}
-
-.linkBtn {
-  border: 0.5vw solid #000;
-  border-radius: 50%;
-  width: 20vw;
-  height: 20vw;
-  margin-top: 8vw;
-  margin-left: -4vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000;
-  font-weight: 400;
-  font-size: 4vw;
 }
 
 @media (min-width: 768px) {
@@ -368,11 +342,11 @@ div.line,
 
 @media (min-width: 992px) {
   .uiuxCard-title {
-    font-size: 10vw;
+    font-size: 5vw;
   }
 
   .uiuxCard-subtitle {
-    font-size: 3vw;
+    font-size: 1.5vw;
   }
   .linkBtn {
     margin-top: 8vw;

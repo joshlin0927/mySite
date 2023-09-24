@@ -74,61 +74,6 @@ $(".menuHolder").on("mouseleave", function () {
   $(".menu").css("grid-template-columns", "33.33% 33.33% 33.33%");
 });
 
-// carousel
-
-let page = 0;
-function pageChange() {
-  $("#slides").css("transform", `translateY(${page * -100}vh)`);
-  $(".slider-dots li")
-    .eq(page)
-    .css("background-color", "#404040")
-    .siblings()
-    .css("background-color", "transparent");
-}
-
-$(window).on("swipeup", function () {
-  if (page > 0) {
-    page--;
-  }
-  // console.log("prev:", page);
-  pageChange();
-});
-$(window).on("swipedown ", function () {
-  if (page < 2) {
-    page++;
-  }
-
-  // console.log("next:", page);
-  pageChange();
-});
-
-$(".prev").on("mousedown ", () => {
-  if (page > 0) {
-    page--;
-  }
-  // console.log("prev:", page);
-  pageChange();
-});
-$(".next").on("mousedown", () => {
-  if (page < 2) {
-    page++;
-  }
-
-  // console.log("next:", page);
-  pageChange();
-});
-
-$(".slider-dots li").mousedown(function () {
-  let y = $(this).index();
-  page = y;
-  // console.log(page);
-  $("#slides").css("transform", `translateY(${y * -100}vh)`);
-  $(this)
-    .css("background-color", "#404040")
-    .siblings()
-    .css("background-color", "transparent");
-});
-
 // YT pause
 const vidModal = [
   "#Donut",

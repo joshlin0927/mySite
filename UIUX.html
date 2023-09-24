@@ -52,19 +52,19 @@
         <div class="collapse navbar-collapse flex-grow-0" id="navbarContent">
           <ul class="navbar-nav nav-pills mb-2 mb-md-0 fs-5">
             <li class="nav-item fw-bold">
-              <a class="nav-link" href="./uiux">UI/UX 作品</a>
+              <a class="nav-link" href="./UIUX.html">UI/UX 作品</a>
               <div class="navItemCurrent"></div>
             </li>
             <li class="nav-item fw-bold">
-              <a class="nav-link" href="./videos">影像作品</a>
+              <a class="nav-link" href="./videos.html">影像作品</a>
               <div class="navItemCurrent"></div>
             </li>
             <li class="nav-item fw-bold">
-              <a class="nav-link" href="./others">其他作品</a>
+              <a class="nav-link" href="./others.html">其他作品</a>
               <div class="navItemCurrent"></div>
             </li>
             <li class="nav-item fw-bold">
-              <a class="nav-link" href="./about">關於我</a>
+              <a class="nav-link" href="./about.html">關於我</a>
               <div class="navItemCurrent"></div>
             </li>
             <li class="nav-item fw-bold d-lg-none">
@@ -83,76 +83,53 @@
 
     <div class="container-fluid">
       <section id="uiux" class="row">
-        <div class="prev fixed-top position-absolute">
-          <ion-icon
-            name="chevron-up-outline"
-            class="d-flex mx-auto h-100 w-100 mt-4"
-          ></ion-icon>
-        </div>
-        <div class="next fixed-bottom position-absolute">
-          <ion-icon
-            name="chevron-down-outline"
-            class="d-flex mx-auto h-100 w-100 mb-4"
-          ></ion-icon>
-        </div>
-        <ul class="slider-dots">
-          <li style="background-color: #404040"></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <div id="slides" class="p-0">
-          <div id="slide1" class="slideImg slideImg1">
-            <div
+        <ul id="slides" class="p-0 position-relative">
+          <li id="slide1" class="slideImg slideImg1">
+            <a
+              href="Gym.html"
               name="WorkOut"
               id="card"
-              class="col-12 h-100 w-100 position-relative"
+              class="d-flex col-12 h-100 w-100 position-relative"
             >
               <div class="uiuxCard-body user-select-none">
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column align-items-center">
                   <h1 class="uiuxCard-title">健身房網站</h1>
                   <h5 class="uiuxCard-subtitle">網站重新設計 - 2021</h5>
                 </div>
-                <a href="Gym.html" class="linkBtn">
-                  <span>專案內容</span>
-                </a>
               </div>
-            </div>
-          </div>
-          <div id="slide2" class="slideImg slideImg2">
-            <div
+            </a>
+          </li>
+          <li id="slide2" class="slideImg slideImg2">
+            <a
+              href="Wander.html"
               name="Wander"
               id="card"
-              class="col-12 h-100 w-100 position-relative"
+              class="d-flex col-12 h-100 w-100 position-relative"
             >
               <div class="uiuxCard-body user-select-none">
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column align-items-center">
                   <h1 class="uiuxCard-title">語言學習網</h1>
                   <h5 class="uiuxCard-subtitle">網站設計與品牌建立 - 2021</h5>
                 </div>
-                <a href="Wander.html" class="linkBtn">
-                  <span>專案內容</span>
-                </a>
               </div>
-            </div>
-          </div>
-          <div id="slide3" class="slideImg slideImg3">
-            <div
+            </a>
+          </li>
+          <li id="slide3" class="slideImg slideImg3">
+            <a
+              href="Wander.html"
               name="DailyUI"
               id="card"
-              class="col-12 h-100 w-100 position-relative"
+              class="d-flex col-12 h-100 w-100 position-relative"
             >
               <div class="uiuxCard-body user-select-none">
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column align-items-center">
                   <h1 class="uiuxCard-title">Daily UI</h1>
                   <h5 class="uiuxCard-subtitle">每日 UI 設計挑戰</h5>
                 </div>
-                <a href="Wander.html" class="linkBtn">
-                  <span>專案內容</span>
-                </a>
               </div>
-            </div>
-          </div>
-        </div>
+            </a>
+          </li>
+        </ul>
       </section>
     </div>
     <footer class="container-fluid fixed-bottom">
