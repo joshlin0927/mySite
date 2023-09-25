@@ -73,22 +73,3 @@ $(".menuHolder").on("mouseleave", function () {
   $(".menu").css("transition", "grid-template-columns 0.5s ease-in-out");
   $(".menu").css("grid-template-columns", "33.33% 33.33% 33.33%");
 });
-
-// YT pause
-const vidModal = [
-  "#Donut",
-  "#JGTrueStock",
-  "#FarGlory",
-  "#OPTCPromotion",
-  "#OKminiPromotion",
-  "#LearningTaiwanese",
-];
-
-let videos = document.querySelectorAll("iframe, video");
-
-vidModal.forEach((element) => {
-  // console.log($(this).find("iframe"));
-  $(element).on("hide.bs.modal", function (e) {
-    $(this).find("iframe").attr("src", $(this).find("iframe").attr("src"));
-  });
-});

@@ -172,6 +172,100 @@ div.line,
   background-image: url(./pic/video/Donut.jpg);
 }
 
+@media (min-width: 1400px) {
+  .line {
+    height: 0.1vw;
+  }
+  .aboutText span {
+    font-size: 1vw;
+  }
+}
+
+/* slides elements */
+#slides {
+  transition: 1s cubic-bezier(0.59, 0.1, 0.52, 0.96);
+}
+
+.BackHomeBtn {
+  display: inline-block;
+  text-align: center;
+  margin: 1rem;
+  padding: 0.75rem 1.25rem;
+  color: white;
+  background-color: #212529;
+  border: 1px solid #212529;
+  transition: 0.25s;
+}
+
+.BackHomeBtn:hover {
+  background-color: #fff;
+  color: #212529;
+}
+
+.slideImg {
+  position: relative;
+  width: 100%;
+  height: 33.33vh;
+}
+
+.slideImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.slideImg:hover::before {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.cardBody {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardTitle {
+  font-size: 13vw;
+  font-weight: 900;
+  color: black;
+}
+
+.cardSubtitle {
+  margin-left: 1vw;
+  font-size: 4vw;
+  font-weight: 700;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .slideImg_1 {
+    background-position: 0% 50%;
+  }
+  .cardBody {
+    flex-direction: row;
+    left: 10%;
+  }
+  .cardTitle {
+    font-size: 12vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .cardTitle {
+    font-size: 5vw;
+  }
+
+  .cardSubtitle {
+    font-size: 1.5vw;
+  }
+}
+
 /* NAVBAR */
 .logo {
   width: 3rem;
@@ -199,67 +293,7 @@ div.line,
 }
 
 /* uiux */
-#uiux {
-  position: relative;
-  height: 100vh;
-}
-
-#uiux .prev,
-#uiux .next {
-  height: 10vh;
-  background-color: transparent;
-  opacity: 1;
-  z-index: 9999;
-  transition: 1s;
-}
-
-#uiux .prev:hover,
-#uiux .next:hover {
-  cursor: pointer;
-}
-
-#slides {
-  transition: 1s cubic-bezier(0.59, 0.1, 0.52, 0.96);
-}
-
-.BackHomeBtn {
-  display: inline-block;
-  text-align: center;
-  margin: 1rem;
-  padding: 0.75rem 1.25rem;
-  color: white;
-  background-color: #212529;
-  border: 1px solid #212529;
-  transition: 0.25s;
-}
-
-.BackHomeBtn:hover {
-  background-color: #fff;
-  color: #212529;
-}
-
-.slideImg {
-  position: relative;
-  width: 100%;
-  height: 33.33%;
-}
-
-.slideImg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: 0.5s;
-  background-color: rgba(255, 255, 255, 0.65);
-}
-
-.slideImg:hover::before {
-  background-color: rgba(255, 255, 255, 0.95);
-}
-
-.slideImg1 {
+#uiux .slideImg1 {
   background-image: url(./pic/workout/workoutCover.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -267,7 +301,7 @@ div.line,
   z-index: 4;
 }
 
-.slideImg2 {
+#uiux .slideImg2 {
   background-image: url(./pic/wander/MacBook\ Pro\ &\ iPhone\ 12\ Pro.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -275,7 +309,7 @@ div.line,
   z-index: 3;
 }
 
-.slideImg3 {
+#uiux .slideImg3 {
   background-image: url(./pic/DailyUI/DailyUI\ 009-Music\ player.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -283,83 +317,53 @@ div.line,
   z-index: 2;
 }
 
-.uiuxCard-body {
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.uiuxCard-title {
-  font-size: 13vw;
-  font-weight: 900;
-  color: black;
-}
-
-.uiuxCard-subtitle {
-  margin-left: 1vw;
-  font-size: 4vw;
-  font-weight: 700;
-  color: black;
-}
-
-@media (min-width: 768px) {
-  .slideImg_1 {
-    background-position: 0% 50%;
-  }
-  .uiuxCard-body {
-    flex-direction: row;
-    left: 10%;
-  }
-  .uiuxCard-title {
-    font-size: 12vw;
-  }
-  .linkBtn {
-    border: 0.25vw solid #000;
-    width: 14vw;
-    height: 14vw;
-    font-size: 3vw;
-    margin-top: 9vw;
-  }
-  #uiux .prev,
-  #uiux .next {
-    opacity: 0;
-  }
-
-  #uiux .prev:hover,
-  #uiux .next:hover {
-    opacity: 1;
-  }
-  .slider-dots {
-    height: 10vh;
-  }
-  .slider-dots li {
-    width: 30px;
-    height: 30px;
-    margin: 0 4px;
-  }
-}
-
-@media (min-width: 992px) {
-  .uiuxCard-title {
-    font-size: 5vw;
-  }
-
-  .uiuxCard-subtitle {
-    font-size: 1.5vw;
-  }
-  .linkBtn {
-    margin-top: 8vw;
-  }
-  .slider-dots {
-    height: 10vh;
-    right: 2vw;
-  }
-}
-
 /* videos */
-#videos {
-  margin-top: 3rem;
+#videos .slideImg1 {
+  background-image: url(./pic/video/Donut.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 4;
+}
+
+#videos .slideImg2 {
+  background-image: url(./pic/video/jgtruestock.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 4;
+}
+
+#videos .slideImg3 {
+  background-image: url(./pic/video/farglory.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 4;
+}
+
+#videos .slideImg4 {
+  background-image: url(./pic/video/OPTCPromotion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 4;
+}
+
+#videos .slideImg5 {
+  background-image: url(./pic/video/okmini.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 4;
+}
+
+#videos .slideImg6 {
+  background-image: url(./pic/video/LearnignTaiwanese.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 4;
 }
 
 .vidCard-title {
@@ -442,19 +446,14 @@ div.line,
 }
 
 /* DetailPage */
-
-.DetailPageAbout {
-  margin-top: 18%;
-}
-
 .detailTitle {
-  font-size: 3.5rem;
+  font-size: 8vw;
   font-weight: 900;
 }
 
 .DetailPageAboutContext {
-  font-size: 24px;
-  width: 100%;
+  font-size: 2vw;
+  padding-left: 1vw;
 }
 
 .DetailPageIMG {
@@ -463,17 +462,6 @@ div.line,
 }
 
 @media (min-width: 768px) {
-  .DetailPageAbout {
-    margin-top: 8%;
-  }
-  .detailTitle {
-    font-size: 6rem;
-    font-weight: 900;
-  }
-
-  .DetailPageAboutContext {
-    padding-top: 1rem;
-  }
   .DetailPageContent {
     order: -1;
   }
@@ -483,11 +471,7 @@ div.line,
   }
 }
 
-@media (min-width: 1440px) {
-  .DetailPageAboutContext {
-    width: 80%;
-    padding-top: 2rem;
-  }
+@media (min-width: 992px) {
   .Detail-content {
     flex-direction: row;
   }
