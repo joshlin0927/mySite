@@ -3,14 +3,6 @@ ion-icon {
   text-decoration: none;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
 .splash-section {
   position: fixed;
   display: flex;
@@ -447,32 +439,67 @@ div.line,
 
 /* DetailPage */
 .detailTitle {
-  font-size: 8vw;
+  font-size: 13vw;
   font-weight: 900;
+  text-align: center;
 }
 
-.DetailPageAboutContext {
-  font-size: 2vw;
-  padding-left: 1vw;
+.detailSubTitle {
+  font-size: 6vw;
+  text-align: center;
 }
 
-.DetailPageIMG {
-  width: 100%;
-  padding: 4rem 0rem;
+.detailContextTitle {
+  font-size: 5vw;
+  margin: 0;
+}
+.detailContext {
+  font-size: 3vw;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
-  .DetailPageContent {
-    order: -1;
+  .detailTitle {
+    font-size: 12vw;
+    font-weight: 900;
+    text-align: start;
   }
-  .DetailContent {
-    display: flex;
-    flex-wrap: wrap;
+
+  .detailSubTitle {
+    font-size: 4vw;
+    text-align: start;
+  }
+
+  .detailContextTitle {
+    font-size: 3.5vw;
+  }
+  .detailContext {
+    font-size: 2vw;
   }
 }
 
 @media (min-width: 992px) {
-  .Detail-content {
-    flex-direction: row;
+  .detailTitle {
+    font-size: 8vw;
+    font-weight: 900;
+  }
+  .detailSubTitle {
+    font-size: 3vw;
+    padding-left: 1vw;
+  }
+  .detailContextTitle {
+    font-size: 2vw;
+  }
+  .detailContext {
+    font-size: 1.5vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .detailContextTitle {
+    font-size: 1.5vw;
+  }
+  .detailContext {
+    font-size: 1vw;
   }
 }
